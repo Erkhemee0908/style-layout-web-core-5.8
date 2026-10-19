@@ -16,77 +16,100 @@
 
 <body>
     <header class="header">
-        <div class="header__section">
-            <div class="header__menu">
+        <div class="header__left">
+            <button type="button" class="header__burger">
                 <img src="assets/style-project__menu.svg" alt="Menu">
-            </div>
-            <img src="assets/style-project__divider.svg" class="no-mobile" alt="">
+            </button>
+            <img src="assets/style-project__divider.svg" class="header__divider" alt="">
             <div class="header__logo">
                 <img src="assets/style-project__logo.svg" alt="CPS logo">
             </div>
         </div>
 
-        <nav class="header__section">
-            <div class="header__nav no-mobile">
+        <nav class="header__nav">
+            <button type="button" class="header__action">
                 <img src="assets/style-project__call.svg" alt="Call">
-            </div>
-            <div class="header__nav no-mobile">
+            </button>
+            <button type="button" class="header__action">
                 <img src="assets/style-project__chat.svg" alt="Chat">
-            </div>
-            <div class="header__nav no-mobile">
+            </button>
+            <button type="button" class="header__action">
                 <img src="assets/style-project__profile.svg" alt="Profile">
-            </div>
+            </button>
             <img src="assets/style-project__divider.svg" alt="">
-            <div class="header__nav">
-                <span class="header__text large-only">Submit a request</span>
+            <button type="button" class="header__action header__action--mobile-view">
                 <img src="assets/style-project__repair.svg" alt="Submit a request">
-            </div>
-            <div class="header__nav">
-                <span class="header__text large-only">Repair status</span>
+            </button>
+            <button type="button" class="header__action header__action--mobile-view">
                 <img src="assets/style-project__status.svg" alt="Repair status">
-            </div>
+            </button>
         </nav>
     </header>
 
-    <main class="home__main">
-        <h1 class="home__title">
-            <img src="assets/style-project__h1-highlight.svg" alt="">
-            Services and support
-        </h1>
+    <main class="services">
+        <div class="title">
+            <img src="assets/style-project__h1-highlight.svg" alt="" class="title__accent">
+            <div class="title__flex-container">
+                <h1 class="title__h1">
+                    Services and support
+                </h1>
+                <div class="title__menu">
+                    <button type="button" class="title__action">
+                        <span>Submit a request</span>
+                        <img src="assets/style-project__repair.svg" alt="">
+                    </button>
+                    <button type="button" class="title__action">
+                        <span>Repair status</span>
+                        <img src="assets/style-project__status.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
 
-        <div class="home__body">
-            <div class="home__menu" role="tablist" aria-label="Services">
-                <div class="home__item home__item--current" role="tab" id="home__devices-we-repair" aria-selected="true"
-                    aria-controls="home__devices-we-repair-panel">Devices we repair</div>
-                <div class="home__item" role="tab" id="home__additional-services" aria-selected="false">Additional
-                    services</div>
-                <div class="home__item" role="tab" id="home__service-prices" aria-selected="false">Service prices</div>
-                <div class="home__item" role="tab" id="home__special-prices" aria-selected="false">Special prices</div>
-                <div class="home__item" role="tab" id="home__reviews" aria-selected="false">Reviews</div>
+        <div class="services__body">
+            <div class="services__menu" role="tablist" aria-label="Services">
+                <button type="button"
+                    class="services__item services__item--devices-we-repair-panel services__item--current" role="tab"
+                    id="services__devices-we-repair" aria-selected="true"
+                    aria-controls="services__devices-we-repair-panel">Devices we repair</button>
+                <button type="button" class="services__item services__item--additional-services" role="tab"
+                    id="services__additional-services" aria-selected="false">
+                    Additional
+                    services</button>
+                <button type="button" class="services__item services__item--service-prices" role="tab"
+                    id="services__service-prices" aria-selected="false">Service
+                    prices</button>
+                <button type="button" class="services__item services__item--special-prices" role="tab"
+                    id="services__special-prices" aria-selected="false">Special
+                    prices</button>
+                <button href="#" type="button" class="services__item services__item--reviews" role="tab"
+                    id="services__reviews" aria-selected="false">Reviews</button>
             </div>
 
-            <div class="home__panel" role="tabpanel" id="home__devices-we-repair-panel"
-                aria-labelledby="home__devices-we-repair">
-                <div class="home__p">
+            <div class="services__panel" role="tabpanel" id="services__devices-we-repair-panel"
+                aria-labelledby="services__devices-we-repair">
+                <div class="services__p">
                     <p>
                         We are an authorised service centre for Dell equipment repairs. Only with us can you
                         repair your Dell laptop with the official manufacturer's warranty.
                     </p>
                     <!-- TODO: replace the media query show/hide with a JS "Read more" toggle -->
-                    <p class="no-mobile">
+                    <p class="services__medium-paragraph">
                         We have been successfully operating since 1992 and have earned a reputation as a reliable
-                        partner<span class="large-only">, as evidenced by our large number of loyal customers.
+                        partner<span class="services__desktop-paragraph">, as evidenced by our large number of loyal
+                            customers.
                             We take pride in the fact that clients come to us through recommendations and, in turn,
                             recommend us to their family and friends</span>.
                     </p>
-                    <div class="home__read-more">
+                    <button type="button" class="services__read-more">
                         <img src="assets/style-project__read-more.svg" alt="">
                         Read more
-                    </div>
+                    </button>
                 </div>
 
-                <div class="home__hero">
-                    <img src="assets/style-project__hero.png" alt="CPS service centre hallway">
+                <div class="services__hero">
+                    <img class="services__hero--img" src="assets/style-project__hero.jpeg"
+                        alt="CPS service centre hallway">
                 </div>
             </div>
         </div>
