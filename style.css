@@ -84,13 +84,6 @@ img {
   display: flex;
 }
 
-.header__text {
-  display: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 /* ===== Services ===== */
 .services {
   background-color: var(--bg);
@@ -131,6 +124,9 @@ img {
   align-items: center;
   gap: 8px;
   border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* Header and title buttons: hover and focus */
@@ -264,8 +260,8 @@ img {
   height: auto;
 }
 
-/* ===== Tablet (784px and up) ===== */
-@media (min-width: 784px) {
+/* ===== Tablet (768px and up) ===== */
+@media (min-width: 768px) {
   .header__left {
     gap: 20px;
   }
