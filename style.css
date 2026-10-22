@@ -176,6 +176,8 @@ img {
   border: 2px solid transparent;
   background: transparent;
   border-radius: 8px;
+
+  font-family: inherit;
 }
 
 .services__item:hover,
@@ -253,9 +255,11 @@ img {
   text-wrap: nowrap;
   width: min-content;
   border-radius: 8px;
+
+  font-family: inherit;
 }
 
-.services__hero--img {
+.services__hero-img {
   width: 100%;
   height: auto;
 }
@@ -312,7 +316,7 @@ img {
     position: relative;
   }
 
-  .services__hero--img {
+  .services__hero-img {
     position: absolute;
     inset: 0;
     height: 100%;
@@ -347,7 +351,7 @@ img {
     display: inline;
   }
 
-  .services__hero--img {
+  .services__hero-img {
     position: static;
     height: auto;
   }
